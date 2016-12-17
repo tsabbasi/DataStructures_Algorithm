@@ -27,10 +27,11 @@ public class Timing {
         
         Integer [] items = new Integer[size];
         
-        Random rInt = new Random();
+//        Random rInt = new Random();
         
         for (int i = 0; i < items.length; i++) {
-            items [i] = rInt.nextInt();
+//            items [i] = rInt.nextInt();
+            items [i] = i;
             System.out.println(items[i]);
         }
         
@@ -39,7 +40,7 @@ public class Timing {
         
         long startTime = System.currentTimeMillis();
         
-        BubbleSort.sort(items);
+        QuickSort.sort(items);
         
         System.out.println("After Sorting");
         for (int i = 0; i < items.length; i++) {
